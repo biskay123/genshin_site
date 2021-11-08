@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/genshin_favicon.svg">
+  <link rel = "stylesheet" href = "css/style.css">
+  <title>Казуха</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<script src="js/myScript.js"></script>
+<!-- Крутилка для мого намальованого смайлика -->
+<script>
+var looper;
+  var degrees = 0;
+  function rotateAnimation(el,speed){
+    var elem = document.getElementById(el);
+    if(navigator.userAgent.match("Chrome")){
+      elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+    } else if(navigator.userAgent.match("Firefox")){
+      elem.style.MozTransform = "rotate("+degrees+"deg)";
+    } else if(navigator.userAgent.match("MSIE")){
+      elem.style.msTransform = "rotate("+degrees+"deg)";
+    } else if(navigator.userAgent.match("Opera")){
+      elem.style.OTransform = "rotate("+degrees+"deg)";
+    } else {
+      elem.style.transform = "rotate("+degrees+"deg)";
+    }
+    looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+    degrees++;
+    if(degrees > 359){
+      degrees = 1;
+    }
+  }
+  </script>
+
+  <style>
+   .leftimg {
+    float:left; 
+    margin: 7px 7px 7px 0;
+   }
+ul {
+   padding-left: 25px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+h1{
+  font-family: Delicious;
+}
+h3{
+font-family: 'Dancing Script', cursive;
+}
+  </style>
+ </head> 
+ <canvas id="smile" class = "center_smile" width="200" height="200" >
+  <script>rotateAnimation("smile",25)</script>
+</canvas>
+<h1 style="text-align:center;" >Все про Кадзуху і не тільки</h1>
+<hr>
+<body style = "background: rgb(148,187,233); background: radial-gradient(circle, rgba(148,187,233,1) 8%, rgba(224,53,128,1) 95%);">
+<p><img style="box-shadow: 7px 7px 10px #e45090;" src = "https://www.pcgamesn.com/wp-content/uploads/2021/06/genshin-impact-kazuha-banner-release-date-1.jpg" width="720" height="480" class="leftimg" alt ="kazuha">
+<h3>Кадзуха</h3>
+<p> Кадзуха - анемо персонаж в Genshin Impact.
+Ронін-самурай з Інадзуми, який знайшов притулок на флоті Південного хреста в Лі Юе. Цей добрий і безтурботний хлопчина багато пережив у минулому.</p>
+</p>
+<h3> Опис на офіційному сайті </h3>
+<p> Мандрівний самурай з Інадзуми, скромний і м'який.
+За молодою і безтурботною зовнішністю ховається повне минуле негараздів. На перший погляд безтурботний юнак строго слідкує власному кодексу поведінки. </p>
+<h3>Особистість</h3>
+<p>Кадзуха живе в мандрах, днем ​​долаючи шлях, а вночі засинаючи на землі під ковдрою з неба і зірок.
+Його не приваблюють ні багатство, ні слава. Для нього важливо тільки жити в гармонії зі світом. 
+Хоч він і часто ночує під відкритим небом, будь то літо чи зима, негода його зовсім не турбує. Та й дощ з вітром немов уникають його і завжди обходять стороною. <br/><br/>
+На питання про таланти Кадзуха відповідає чесно: слухати вітер і спостерігати за хмарами.
+Мало хто звертає увагу на дрібні зміни погоди, тому знаки природи часто залишаються незрозумілими. 
+Але Кадзухе з його вмінням досить лише відчути подих вітру або вирости вологості, щоб зрозуміти: слід шукати притулок. <br/><br/>
+Обійшов півсвіту Кадзуха уникнув незліченну кількість злив і снігопадів. Але на цей раз його чекає небачена гроза, йти від якої він не стане.
+У доленосній зустрічі зійдуться дощ, блискавка і він.<br/></br/>
+«... А десь далеко лунає ледь чутний гуркіт грому. Навіть якщо дощу не буде, я залишуся тут ».<br/><br/>
+</p> 
+<h3 style="text-align:center;">Важливі посилання</h3>
+<ul>
+  <li><a href = "https://genshin-impact.fandom.com/ru/wiki/%D0%9A%D0%B0%D0%B4%D0%B7%D1%83%D1%85%D0%B0#.D0.A2.D0.B0.D0.BB.D0.B0.D0.BD.D1.82.D1.8B" target="_blank">
+ Таланти Казухи </a> <br/></li>
+   <li><a href = "https://genshin-impact.fandom.com/ru/wiki/%D0%9A%D0%B0%D0%B4%D0%B7%D1%83%D1%85%D0%B0#.D0.A1.D0.BE.D0.B7.D0.B2.D0.B5.D0.B7.D0.B4.D0.B8.D0.B5" target="_blank">
+ Сузір'я Казухи </a> <br/></li>
+   <li><a href = "https://genshin-impact.fandom.com/ru/wiki/%D0%9A%D0%B0%D0%B4%D0%B7%D1%83%D1%85%D0%B0#.D0.92.D0.BE.D0.B7.D0.B2.D1.8B.D1.88.D0.B5.D0.BD.D0.B8.D0.B5" target="_blank">
+ Піднесення Казухи </a> <br/></li>
+   <li><a href = "https://genshin-impact.fandom.com/ru/wiki/%D0%9A%D0%B0%D0%B4%D0%B7%D1%83%D1%85%D0%B0#.D0.91.D0.B0.D0.B7.D0.BE.D0.B2.D1.8B.D0.B5_.D1.85.D0.B0.D1.80.D0.B0.D0.BA.D1.82.D0.B5.D1.80.D0.B8.D1.81.D1.82.D0.B8.D0.BA.D0.B8" 
+   target="_blank">
+ Бойові характеристики Казухи </a> <br/></li>
+</ul>
+<h3 style="text-align:center;">SVG зображення</h3>
+<p>
+  <img src="css/buttons.svg" width="720" height="480" class="center">
+</p>
+<h3 style="text-align:center;">Зручний маршрут від вокзалу до нас</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d10293.91115744487!2d23.999643806853456!3d49.83347939888649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x473add85a5f4462d%3A0xf79183f04b5c75a3!2z0JfQsNC70ZbQt9C90LjRh9C90LjQuSDQstC-0LrQt9Cw0LssINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!3m2!1d49.839206999999995!2d23.9944334!4m5!1s0x473add7d4dfb09ef%3A0xc7763c7e5e20cb9e!2z0LLRg9C70LjRhtGPINCb0YPQutCw0YjQsCwgNSwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsCwgNzkwMDA!3m2!1d49.8276951!2d24.014853!5e0!3m2!1sru!2sua!4v1636366542883!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="center"></iframe>
+<h3 style="text-align:center;">Невеличке відео з аудіо</h3>
+<audio class="videocenter" controls>
+  <source src="audio/Why.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<video width="1080" height="720" class="videocenter" controls>
+  <source src="video/kazuha.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</body>
+</html>
