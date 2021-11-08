@@ -5,12 +5,23 @@
   <link rel="icon" href="images/genshin_favicon.svg">
   <link rel = "stylesheet" href = "css/style.css">
   <title>Казуха</title>
-  
+<!--Google fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<!--JQuery-->
+<script type="text/javascript" src="js/jquery-3.6.0.js"> </script>
+<!--OwlCarousel-->
+<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"> </script>
+<!--Accordion-->
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<link rel="stylesheet" href="js/jquery-ui.js">
 
+<!--Мій файл-->
 <script src="js/myScript.js"></script>
+
 <!-- Крутилка для мого намальованого смайлика -->
 <script>
 var looper;
@@ -106,5 +117,104 @@ Your browser does not support the audio element.
   <source src="video/kazuha.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+
+<!--Карусель-->
+<div class="owl-carousel owl-theme">
+							
+	<div><img src="images/angry_paimon.jpg"></div>
+
+	<div><img src="images/keqing.png"></div>
+
+	<div><img src="images/opening.png"></div>
+
+	<div><img src="images/Theme.png"></div>
+
+	<div><img src="images/чжун_ли.jpg"></div>
+
+</div>
+<!--Карусель-->
+
+<!--Акордеон-->
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+<!--кінець акордеона-->
+
+<p>Оберіть дату: <input type="text" id="datepicker"></p>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<!--Акордеон-->
+<script>
+$( "#accordion" ).accordion();
+</script>
+
+<!--Карусель-->
+<script>
+	$(document).ready(function(){
+
+		$('.owl-carousel').owlCarousel({loop:true,autoplay:true, autoplayTimeout:2000});
+	});
+</script>
+
+<!--Datepicker-->
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      nextText: "Наступний",
+      prevText: "Попередній",
+      dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Нд" ],
+      monthNames: [ "Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень" ]
+    });
+  } );
+  </script>
+
 </body>
 </html>
